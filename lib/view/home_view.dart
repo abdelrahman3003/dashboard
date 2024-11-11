@@ -1,3 +1,4 @@
+import 'package:dashboard/view/widget/drawer/home_drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -5,6 +6,13 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold(
+      backgroundColor: Color(0xffFAFAFA),
+      body: Row(
+        children: [
+          Expanded(child: HomeDrawer()),
+        ],
+      ),
+    );
   }
 }

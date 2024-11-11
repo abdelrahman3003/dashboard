@@ -31,8 +31,17 @@ class $AssetsIconsGen {
   /// File path: assets/icons/convert-card.svg
   String get convertCard => 'assets/icons/convert-card.svg';
 
+  /// File path: assets/icons/graph.svg
+  String get graph => 'assets/icons/graph.svg';
+
+  /// File path: assets/icons/logout.svg
+  String get logout => 'assets/icons/logout.svg';
+
   /// File path: assets/icons/moneys.svg
   String get moneys => 'assets/icons/moneys.svg';
+
+  /// File path: assets/icons/setting-2.svg
+  String get setting2 => 'assets/icons/setting-2.svg';
 
   /// File path: assets/icons/wallet-2.svg
   String get wallet2 => 'assets/icons/wallet-2.svg';
@@ -46,7 +55,10 @@ class $AssetsIconsGen {
         category2,
         chart2,
         convertCard,
+        graph,
+        logout,
         moneys,
+        setting2,
         wallet2
       ];
 }
