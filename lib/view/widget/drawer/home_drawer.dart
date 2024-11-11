@@ -12,33 +12,35 @@ class HomeDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-              color: Colors.white,
-              child: CustomScrollView(
-                slivers: [
-                  const SliverToBoxAdapter(child: UserCard()),
-                  SliverToBoxAdapter(
-                      child: SizedBox(
-                          height: MediaQuery.of(context).size.height * .02)),
-                  const DrawerItemList(),
-                  SliverFillRemaining(
-                    child: Column(
-                      children: [
-                        const Spacer(),
-                        DrawerItem(
-                            drawerItemModel: DrawerItemModel(
-                          icon: Assets.icons.setting2,
-                          title: "Setting",
-                        )),
-                        DrawerItem(
-                            drawerItemModel: DrawerItemModel(
-                          icon: Assets.icons.logout,
-                          title: "Logout",
-                        )),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            );
+      color: Colors.white,
+      child: CustomScrollView(
+        slivers: [
+          const SliverToBoxAdapter(child: UserCard()),
+          SliverToBoxAdapter(
+              child:
+                  SizedBox(height: MediaQuery.of(context).size.height * .02)),
+          const DrawerItemList(),
+          SliverFillRemaining(
+            child: Column(
+              children: [
+                const Spacer(),
+                DrawerItem(
+                    isactive: false,
+                    drawerItemModel: DrawerItemModel(
+                      icon: Assets.icons.setting2,
+                      title: "Setting",
+                    )),
+                DrawerItem(
+                    isactive: false,
+                    drawerItemModel: DrawerItemModel(
+                      icon: Assets.icons.logout,
+                      title: "Logout",
+                    )),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }

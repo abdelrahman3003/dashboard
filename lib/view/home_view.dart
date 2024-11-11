@@ -10,7 +10,9 @@ class HomeView extends StatelessWidget {
       backgroundColor: Color(0xffFAFAFA),
       body: Row(
         children: [
-          Expanded(child: HomeDrawer()),
+          Expanded(
+            child: HomeDrawer(),
+          ),
         ],
       ),
     );
