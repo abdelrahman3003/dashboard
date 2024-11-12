@@ -32,9 +32,10 @@ abstract class AppStyles {
     fontWeight: FontWeight.w400,
     fontFamily: "Montserrat",
   );
-    static TextStyle style14font400black = const TextStyle(
+  static TextStyle style14font400black = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w400,
     fontFamily: "Montserrat",
+    color: AppColors.black,
   );
 }

@@ -1,10 +1,11 @@
 import 'package:dashboard/utils/app_styles.dart';
+import 'package:dashboard/view/widget/all_expenses/invoice_item_list.dart';
 import 'package:dashboard/view/widget/all_expenses/quick_invoice_bar.dart';
 import 'package:dashboard/view/widget/all_expenses/transaction_list.dart';
-import 'package:dashboard/view/widget/app_textform.dart';
 import 'package:flutter/material.dart';
 
 import '../../../utils/app_colors.dart';
+import 'invoice_buttons.dart';
 
 class QuickInvoice extends StatelessWidget {
   const QuickInvoice({super.key});
@@ -23,17 +24,16 @@ class QuickInvoice extends StatelessWidget {
         children: [
           const QuickInvoiceBar(),
           Text("Latest Transaction", style: AppStyles.style14font400black),
+          const SizedBox(height: 12),
           const SizedBox(height: 70, child: TransactionList()),
           const SizedBox(height: 24),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text("Customer name", style: AppStyles.style12font400black),
-              const AppTextform()
-            ],
-          )
+          const InvoiceItemList(),
+          const SizedBox(height: 24),
+          const InvoiceButtons()
         ],
       ),
     );
   }
 }
+
+
