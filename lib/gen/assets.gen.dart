@@ -10,6 +10,9 @@
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/arrow-right.svg
+  String get arrowRight => 'assets/icons/arrow-right.svg';
+
   /// File path: assets/icons/avatar1.svg
   String get avatar1 => 'assets/icons/avatar1.svg';
 
@@ -48,6 +51,7 @@ class $AssetsIconsGen {
 
   /// List of all assets
   List<String> get values => [
+        arrowRight,
         avatar1,
         avatar2,
         cardReceive,

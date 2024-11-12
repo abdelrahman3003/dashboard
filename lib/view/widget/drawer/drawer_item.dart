@@ -17,7 +17,10 @@ class DrawerItem extends StatelessWidget {
         drawerItemModel.icon,
       ),
       trailing: isactive ? Container(width: 5, color: AppColors.primary) : null,
-      title: Text(drawerItemModel.title, style: AppStyles.style12font400black),
+      title: Text(drawerItemModel.title,
+          style: AppStyles.style12font400black.copyWith(
+            color: isactive ? AppColors.primary : AppColors.black,
+          )),
     );
   }
 }

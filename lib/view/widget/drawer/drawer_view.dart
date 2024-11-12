@@ -1,3 +1,4 @@
+import 'package:dashboard/model/userModel.dart';
 import 'package:flutter/material.dart';
 
 import '../../../gen/assets.gen.dart';
@@ -6,8 +7,8 @@ import 'drawer_item.dart';
 import 'drawer_item_list.dart';
 import 'user_card.dart';
 
-class HomeDrawer extends StatelessWidget {
-  const HomeDrawer({super.key});
+class DrawerView extends StatelessWidget {
+  const DrawerView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,11 @@ class HomeDrawer extends StatelessWidget {
       color: Colors.white,
       child: CustomScrollView(
         slivers: [
-          const SliverToBoxAdapter(child: UserCard()),
+          SliverToBoxAdapter(
+              child: UserCard(
+                usermodel: Usermodel(title: "Lekan Okeowo", subtitle: "demo@gmail.com", icon: Assets.icons.avatar1,),
+        
+          )),
           SliverToBoxAdapter(
               child:
                   SizedBox(height: MediaQuery.of(context).size.height * .02)),

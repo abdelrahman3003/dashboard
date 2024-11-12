@@ -10,18 +10,18 @@ class DrawerItemList extends StatefulWidget {
   State<DrawerItemList> createState() => _DrawerItemListState();
 }
 
+List items = [
+  DrawerItemModel(icon: Assets.icons.category2, title: "Dashboard"),
+  DrawerItemModel(icon: Assets.icons.chart2, title: "My Transaction"),
+  DrawerItemModel(icon: Assets.icons.graph, title: "Statistics"),
+  DrawerItemModel(icon: Assets.icons.wallet2, title: "Wallet Account"),
+  DrawerItemModel(icon: Assets.icons.convertCard, title: "My Investments"),
+];
+
 class _DrawerItemListState extends State<DrawerItemList> {
   int isSelected = 0;
   @override
   Widget build(BuildContext context) {
-    List items = [
-      DrawerItemModel(icon: Assets.icons.category2, title: "Dashboard"),
-      DrawerItemModel(icon: Assets.icons.chart2, title: "My Transaction"),
-      DrawerItemModel(icon: Assets.icons.graph, title: "Statistics"),
-      DrawerItemModel(icon: Assets.icons.wallet2, title: "Wallet Account"),
-      DrawerItemModel(icon: Assets.icons.convertCard, title: "My Investments"),
-    ];
-
     return SliverList.builder(
       itemCount: items.length,
       itemBuilder: (context, index) => Padding(
@@ -29,7 +29,7 @@ class _DrawerItemListState extends State<DrawerItemList> {
         child: InkWell(
           onTap: () {
             setState(() {
-            isSelected = index;
+              isSelected = index;
             });
           },
           child: DrawerItem(
