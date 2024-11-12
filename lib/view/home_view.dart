@@ -1,3 +1,4 @@
+import 'package:dashboard/view/widget/card/card_view.dart';
 import 'package:dashboard/view/widget/drawer/drawer_view.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,8 @@ class HomeView extends StatelessWidget {
           Expanded(child: DrawerView()),
           SizedBox(width: 12),
           Expanded(flex: 2, child: ExpensesView()),
-          Expanded(child: SizedBox())
+          SizedBox(width: 12),
+          Expanded(child: CardView())
         ],
       ),
     );
