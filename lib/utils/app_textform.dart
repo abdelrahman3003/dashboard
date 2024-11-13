@@ -10,8 +10,8 @@ class AppTextform extends StatelessWidget {
       decoration: InputDecoration(
           contentPadding: const EdgeInsets.all(20),
           hintText: hint,
-          hintStyle: AppStyles.style12font400black.copyWith(
-              fontWeight: FontWeight.w100, color: const Color(0xffAAAAAA)),
+          hintStyle: AppStyles.style14font400black(context)
+              .copyWith(color: const Color(0xffAAAAAA)),
           filled: true,
           fillColor: const Color(0xffFAFAFA),
           border: buildBorder(),

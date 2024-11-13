@@ -5,7 +5,6 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../../../../utils/app_colors.dart';
 
-
 class CustomCard extends StatelessWidget {
   const CustomCard({
     super.key,
@@ -27,36 +26,34 @@ class CustomCard extends StatelessWidget {
             ListTile(
                 title: Text(
                   "Name card",
-                  style: AppStyles.style12font400black
-                      .copyWith(color: AppColors.white),
+                  style: AppStyles.style16font400white(context)
+                      .copyWith(color: const Color(0xffFFFFFF)),
                 ),
-                subtitle: Text(
-                  "Syah Bandi",
-                  style: AppStyles.style16font500black
-                      .copyWith(color: AppColors.white),
-                ),
+                subtitle: Text("Syah Bandi",
+                    style: AppStyles.style20font500whit(context)),
                 trailing: SvgPicture.asset(Assets.icons.gallery)),
             const Spacer(),
             Padding(
-              padding: const EdgeInsets.only(right: 24, bottom: 16),
+              padding: const EdgeInsets.only(right: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Text(
                     "0918 8124 0042 8129",
-                    style: AppStyles.style14font400black.copyWith(
+                    style: AppStyles.style24font600black(context).copyWith(
                       color: AppColors.white,
                     ),
                   ),
                   Text(
                     "12/20 - 124",
-                    style: AppStyles.style12font400black.copyWith(
+                    style: AppStyles.style16font400white(context).copyWith(
                       color: AppColors.white,
                     ),
                   ),
                 ],
               ),
-            )
+            ),
+            const Flexible(child: SizedBox(height: 16))
           ],
         ),
       ),

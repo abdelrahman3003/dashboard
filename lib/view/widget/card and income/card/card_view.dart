@@ -18,7 +18,7 @@ class CardView extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("My card", style: AppStyles.style14font400black),
+            Text("My card", style: AppStyles.style20font600black(context)),
             const SizedBox(height: 20),
             const CardWithDots(),
             const SizedBox(height: 10),

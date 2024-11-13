@@ -12,13 +12,13 @@ class SeeAllText extends StatelessWidget {
       children: [
         Text(
           "Transaction History",
-          style: AppStyles.style16font700black,
+          style: AppStyles.style20font600black(context),
         ),
         const Spacer(),
         Text(
           "See All",
-          style:
-              AppStyles.style14font400black.copyWith(color: AppColors.primary),
+          style: AppStyles.style16font500black(context)
+              .copyWith(color: AppColors.primary),
         ),
       ],
     );

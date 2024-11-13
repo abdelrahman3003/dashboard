@@ -11,7 +11,7 @@ class InvoiceItem extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(title, style: AppStyles.style12font400black),
+        Text(title, style: AppStyles.style16font500black(context)),
         const SizedBox(height: 12),
         AppTextform(hint: hint)
       ],

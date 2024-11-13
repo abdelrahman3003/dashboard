@@ -23,7 +23,8 @@ class QuickInvoice extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const QuickInvoiceBar(),
-          Text("Latest Transaction", style: AppStyles.style14font400black),
+          Text("Latest Transaction",
+              style: AppStyles.style16font500black(context)),
           const SizedBox(height: 12),
           const SizedBox(height: 70, child: TransactionList()),
           const SizedBox(height: 24),
@@ -35,5 +36,3 @@ class QuickInvoice extends StatelessWidget {
     );
   }
 }
-
-

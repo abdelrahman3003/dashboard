@@ -16,15 +16,19 @@ class UserCard extends StatelessWidget {
       elevation: 0,
       color: const Color(0xffFAFAFA),
       child: ListTile(
-        title: Text(
-          usermodel.title,
-          style: AppStyles.style14font400black,
+        title: FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(
+            usermodel.title,
+            style: AppStyles.style16font600black(context),
+          ),
         ),
-        subtitle: Opacity(
-          opacity: .7,
+        subtitle: FittedBox(
+          fit: BoxFit.scaleDown,
           child: Text(
             usermodel.subtitle,
-            style: AppStyles.style12font400black,
+            style: AppStyles.style12font400black(context)
+                .copyWith(color: const Color(0xffAAAAAA)),
           ),
         ),
         leading: Padding(

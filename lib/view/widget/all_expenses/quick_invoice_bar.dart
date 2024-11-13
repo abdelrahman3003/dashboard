@@ -9,21 +9,21 @@ class QuickInvoiceBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-        children: [
-          Text(
-            "Quick Invoice",
-            style: AppStyles.style16font500black,
+      children: [
+        Text(
+          "Quick Invoice",
+          style: AppStyles.style24font600black(context),
+        ),
+        const Spacer(),
+        CircleAvatar(
+          maxRadius: 24,
+          backgroundColor: const Color(0xffFAFAFA),
+          child: Icon(
+            Icons.add,
+            color: AppColors.primary,
           ),
-          const Spacer(),
-          CircleAvatar(
-            maxRadius: 24,
-            backgroundColor: const Color(0xffFAFAFA),
-            child: Icon(
-              Icons.add,
-              color: AppColors.primary,
-            ),
-          )
-        ],
-      );
+        )
+      ],
+    );
   }
 }

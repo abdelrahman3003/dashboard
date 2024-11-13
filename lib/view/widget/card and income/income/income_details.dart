@@ -7,11 +7,10 @@ class IncomeDetails extends StatelessWidget {
   final PichardModel pichardModel;
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-        child: ListTile(
+    return ListTile(
       title: Text(
         pichardModel.title,
-        style: AppStyles.style12font400black.copyWith(
+        style: AppStyles.style14font400black(context).copyWith(
           color: pichardModel.color,
         ),
       ),
@@ -23,10 +22,10 @@ class IncomeDetails extends StatelessWidget {
       ),
       trailing: Text(
         "${pichardModel.value}%",
-        style: AppStyles.style12font400black.copyWith(
+        style: AppStyles.style16font500black(context).copyWith(
           color: pichardModel.color,
         ),
       ),
-    ));
+    );
   }
 }

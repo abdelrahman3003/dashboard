@@ -39,7 +39,7 @@ class AllExpensesCard extends StatelessWidget {
           const SizedBox(height: 34),
           Text(
             expensesModel.title,
-            style: AppStyles.style16font500black.copyWith(
+            style: AppStyles.style16font600black(context).copyWith(
               color: isActive ? Colors.white : AppColors.primary,
             ),
           ),
@@ -48,15 +48,16 @@ class AllExpensesCard extends StatelessWidget {
             opacity: .8,
             child: Text(
               expensesModel.subtitle,
-              style: AppStyles.style14font400black.copyWith(
-                color: isActive ? Colors.white : AppColors.primary,
-              ),
+              style: AppStyles.style14font400black(context).copyWith(
+                  color: isActive
+                      ? const Color(0xffFAFAFA)
+                      : const Color(0xffAAAAAA)),
             ),
           ),
           const SizedBox(height: 16),
           Text(
             expensesModel.money,
-            style: AppStyles.style24font600black.copyWith(
+            style: AppStyles.style24font600black(context).copyWith(
               color: isActive ? Colors.white : AppColors.primary,
             ),
           ),

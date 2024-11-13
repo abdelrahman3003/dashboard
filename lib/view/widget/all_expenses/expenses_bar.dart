@@ -13,7 +13,7 @@ class ExpensesBar extends StatelessWidget {
       children: [
         Text(
           title ?? "All Expenses",
-          style: AppStyles.style16font500black,
+          style: AppStyles.style20font600black(context),
         ),
         const Spacer(),
         Container(
@@ -25,7 +25,7 @@ class ExpensesBar extends StatelessWidget {
             children: [
               Text(
                 "Monthly",
-                style: AppStyles.style16font500black,
+                style: AppStyles.style16font500black(context),
               ),
               const SizedBox(width: 10),
               Transform.rotate(

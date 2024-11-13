@@ -17,10 +17,14 @@ class DrawerItem extends StatelessWidget {
         drawerItemModel.icon,
       ),
       trailing: isactive ? Container(width: 5, color: AppColors.primary) : null,
-      title: Text(drawerItemModel.title,
-          style: AppStyles.style12font400black.copyWith(
-            color: isactive ? AppColors.primary : AppColors.black,
-          )),
+      title: FittedBox(
+        fit: BoxFit.scaleDown,
+        alignment: Alignment.centerLeft,
+        child: Text(drawerItemModel.title,
+            style: AppStyles.style14font400black(context).copyWith(
+              color: isactive ? AppColors.primary : AppColors.black,
+            )),
+      ),
     );
   }
 }

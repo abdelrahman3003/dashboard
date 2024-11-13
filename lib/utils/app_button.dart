@@ -19,7 +19,8 @@ class AppButton extends StatelessWidget {
                 WidgetStatePropertyAll(color ?? AppColors.primary)),
         child: Text(
           title,
-          style: AppStyles.style14font400black.copyWith(
+          style: AppStyles.style16font600black(context).copyWith(
+            fontSize: getResponsiveFontSize(context, fontsize: 16),
             color: color != null ? AppColors.primary : AppColors.white,
           ),
         ));
