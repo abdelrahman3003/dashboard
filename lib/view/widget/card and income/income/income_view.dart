@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:dashboard/utils/app_colors.dart';
+import 'package:dashboard/utils/size_config.dart';
 import 'package:dashboard/view/widget/all_expenses/expenses_bar.dart';
 import 'package:dashboard/view/widget/card%20and%20income/income/pichar_draw_detailed.dart';
 import 'package:flutter/widgets.dart';
@@ -23,7 +24,8 @@ class IncomeView extends StatelessWidget {
       PichardModel(title: "Other", value: 22, color: const Color(0xffE2DECD)),
     ];
     double width = MediaQuery.sizeOf(context).width;
-    bool isMinized = width <= 1250 ? true : false;
+    bool isMinized =
+        width <= 1250 && width >= SizeConfig.desktop ? true : false;
     log("$width");
     return Container(
       decoration: BoxDecoration(

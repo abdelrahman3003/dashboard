@@ -1,4 +1,4 @@
 class SizeConfig {
-  static double desktop = 1200;
-  static double tablet = 800;
+  static double desktop = 1000;
+  static double tablet = 600;
 }

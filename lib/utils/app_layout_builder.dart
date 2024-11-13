@@ -14,7 +14,7 @@ class AppLayoutBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth < 600) {
+        if (constraints.maxWidth < SizeConfig.tablet) {
           return mobileLayoutBuilder(context);
         } else if ((constraints.maxWidth < SizeConfig.desktop)) {
           return tabletLayoutBuilder(context);
