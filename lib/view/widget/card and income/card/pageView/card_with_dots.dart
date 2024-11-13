@@ -1,7 +1,7 @@
-import 'package:dashboard/view/widget/card/pageView/custom_card.dart';
 import 'package:expandable_page_view/expandable_page_view.dart';
 import 'package:flutter/widgets.dart';
 
+import 'custom_card.dart';
 import 'dot_list.dart';
 
 class CardWithDots extends StatefulWidget {

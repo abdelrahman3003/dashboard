@@ -1,8 +1,8 @@
-import 'package:dashboard/view/widget/card/card_view.dart';
 import 'package:dashboard/view/widget/drawer/drawer_view.dart';
 import 'package:flutter/material.dart';
 
 import 'widget/all_expenses/expenses_view.dart';
+import 'widget/card and income/card_and_income_view.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -17,7 +17,7 @@ class HomeView extends StatelessWidget {
           SizedBox(width: 12),
           Expanded(flex: 2, child: ExpensesView()),
           SizedBox(width: 12),
-          Expanded(child: CardView())
+          Expanded(child: CardAndIncomeView())
         ],
       ),
     );

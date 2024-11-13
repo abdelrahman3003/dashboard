@@ -3,7 +3,8 @@ import 'package:dashboard/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../../utils/app_colors.dart';
+import '../../../../../utils/app_colors.dart';
+
 
 class CustomCard extends StatelessWidget {
   const CustomCard({

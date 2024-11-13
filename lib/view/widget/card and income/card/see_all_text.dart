@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
-import '../../../utils/app_colors.dart';
-import '../../../utils/app_styles.dart';
+import '../../../../utils/app_colors.dart';
+import '../../../../utils/app_styles.dart';
 
 class SeeAllText extends StatelessWidget {
   const SeeAllText({super.key});

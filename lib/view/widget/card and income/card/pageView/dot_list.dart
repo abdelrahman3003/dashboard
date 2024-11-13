@@ -1,5 +1,6 @@
-import 'package:dashboard/view/widget/card/pageView/dot.dart';
 import 'package:flutter/widgets.dart';
+
+import 'dot.dart';
 
 class DotList extends StatelessWidget {
   const DotList({super.key, required this.indexIsActive});
