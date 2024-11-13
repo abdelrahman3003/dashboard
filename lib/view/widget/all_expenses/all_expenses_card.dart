@@ -55,10 +55,12 @@ class AllExpensesCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 16),
-          Text(
-            expensesModel.money,
-            style: AppStyles.style24font600black(context).copyWith(
-              color: isActive ? Colors.white : AppColors.primary,
+          FittedBox(
+            child: Text(
+              expensesModel.money,
+              style: AppStyles.style24font600black(context).copyWith(
+                color: isActive ? Colors.white : AppColors.primary,
+              ),
             ),
           ),
         ],

@@ -7,14 +7,12 @@ class CardAndIncomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
-      child: Column(
-        children: [
-          CardView(),
-          SizedBox(height: 24),
-          IncomeView(),
-        ],
-      ),
+    return const Column(
+      children: [
+        CardView(),
+        SizedBox(height: 24),
+        IncomeView(),
+      ],
     );
   }
 }

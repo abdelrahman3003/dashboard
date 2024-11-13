@@ -17,10 +17,7 @@ class HomeView extends StatelessWidget {
         backgroundColor: const Color(0xffFAFAFA),
         drawer: const Drawer(child: DrawerView()),
         appBar: MediaQuery.sizeOf(context).width < SizeConfig.tablet
-            ? AppBar(
-                backgroundColor: AppColors.white,
-                elevation: 0,
-              )
+            ? AppBar(backgroundColor: AppColors.white, elevation: 0)
             : null,
         body: AppLayoutBuilder(
           mobileLayoutBuilder: (context) => const MobielLayout(),

@@ -25,7 +25,9 @@ class IncomeView extends StatelessWidget {
     ];
     double width = MediaQuery.sizeOf(context).width;
     bool isMinized =
-        width <= 1250 && width >= SizeConfig.desktop ? true : false;
+        (width <= 1250 && width >= SizeConfig.desktop) || (width <= 390)
+            ? true
+            : false;
     log("$width");
     return Container(
       decoration: BoxDecoration(
